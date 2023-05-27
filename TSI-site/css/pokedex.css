@@ -1,0 +1,126 @@
+body {
+    background-image: url(../img/fundo-site.png);/*maneira de colocar img.*/
+    background-repeat: no-repeat;/*isso diz para o background não repetir o fundo*/
+    background-size: cover;/*isso diz para o background ocupar todo o body*/
+    min-height: 100vh;
+}
+
+header {
+	font-family: 'Outfit', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+nav {
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	margin-top: 4em; /* Adicione um espaçamento superior para separar do header */
+}
+
+.link-nav:link, .link-nav:visited, 
+.link-noticia:link, .link-noticia:visited {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: .25rem;
+  line-height: 2.5rem;
+  transition: .3s;
+}
+
+.link-nav:hover, .link-noticia:hover {
+  color: hsl(120 100% 0%);
+  background-color: hsl(51, 84%, 36%);
+  padding: 0.25rem 0.5rem;
+}
+
+.link-nav:active, .link-noticia:active {
+	font-size: 16px;
+}
+
+.link-nav {
+	font-size: 1.2rem;
+	margin: 30px;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: hsl(51, 35%, 43%);
+    color: #222;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card:hover {
+    animation: bounce 1s linear;
+    cursor: pointer;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'Hind', sans-serif;
+}
+
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+    font-family: 'Hind', sans-serif;
+}
+
+.card-image {
+    height: 200px;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+footer {
+	width: 1211px;
+	padding: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 0 50px 0 50px;
+}

@@ -1,0 +1,192 @@
+/* // Reset Css //  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------/-/---------------------*/
+
+:root {
+  --text-color: hsl(0 0% 100%);
+  
+  --table-background-hue: 255;
+  --table-background-saturation: 20%;
+  --table-background-light: 20%;
+  
+  --th-opacity: 0.5;
+  --th-2n: 0.15;
+}
+
+body {
+  background-image: url(../img/fundo-site.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  font-size: 1.125rem;
+  font-family: system-ui;
+  line-height: 1.5;
+}
+
+header {
+	font-family: 'Outfit', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+nav {
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	margin-top: 4em; /* Adicione um espaçamento superior para separar do header */
+}
+
+main {
+  margin: 70px 50px;
+}
+
+footer {
+	width: 1211px;
+	padding: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 0 50px 0 50px;
+}
+
+.link-nav:link, .link-nav:visited {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  border-radius: .25rem;
+  line-height: 2.5rem;
+  transition: .3s;
+}
+
+.link-nav:hover {
+  color: hsl(120 100% 0%);
+  background-color: hsl(51, 84%, 36%);
+  padding: 0.25rem 0.5rem;
+}
+
+.link-nav:active {
+	font-size: 16px;
+}
+
+.link-nav {
+	font-size: 1.2rem;
+	margin: 20px;
+}
+
+table {
+  width: 100%;
+  background: hsl(var(--table-background-hue) var(--table-background-saturation) var(--table-background-light));
+  border-collapse: collapse;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+  
+caption, th, td {
+  padding: 1.5rem;
+}
+  
+caption, th {
+  text-align: left;
+}
+  
+caption {
+  background: hsl(0 0% 0%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+  
+th {
+  background: hsl(0 0% 0% / var(--th-opacity));
+}
+  
+tr:nth-of-type(2n) {
+  background: hsl(0 0% 0% / var(--th-2n));
+}
+
+.nome-th, .tipo-th, .poder-th, .fraqueza-th, 
+.especie-th, .chance-de-pegar-th, .geracao-th {
+  width: 10%;
+}
+  
+@media (max-width: 650px) {
+  th {
+    display: none;
+  }
+    
+  td {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 18ch auto;
+    padding: 0.5rem 1rem;
+  }  
+    
+  td:first-child {
+    padding-top: 2rem;
+  }
+
+  td:last-child {
+    padding-bottom: 2rem;
+  }
+
+  td::before {
+    content: attr(data-cell) ": ";
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}
+
+.banner-footer {
+	cursor: pointer;
+}
