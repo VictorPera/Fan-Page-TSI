@@ -91,6 +91,7 @@ main {
 }
 
 .div-main {
+	color: #042006;
 	background-color: #465ca760;
 	border-radius: 10px;
 	padding: 25px;
@@ -121,8 +122,17 @@ footer {
 	margin: 0 50px 0 50px;
 }
 
-.link-nav:link, .link-nav:visited, 
 .link-noticia:link, .link-noticia:visited {
+	background-color: transparent;
+	color: #000;
+	color: #fff;
+	text-decoration: none;
+	border-radius: .25rem;
+	line-height: 2.5rem;
+	transition: .3s;
+}
+
+.link-nav:link, .link-nav:visited {
   background-color: transparent;
   color: #fff;
   text-decoration: none;
