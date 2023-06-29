@@ -52,6 +52,7 @@ body {
     min-height: 100vh;
 	display: flex;
     flex-direction: column;
+	font-family: 'Outfit', sans-serif;
 }
 
 /* header {
@@ -73,19 +74,17 @@ a:hover {
 	opacity: 0.7;
 }
   
-.logo {
-	font-size: 24px;
-	text-transform: uppercase;
-	letter-spacing: 4px;
+.logo_pokemon {
+	width: 250px;
 }
   
 nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-	background: #23232e;
-	height: 8vh;
+	font-family: 'Outfit', sans-serif;
+	background: #23232e94;
+	height: 14vh;
 }
   
 .nav-list {
@@ -192,6 +191,7 @@ main {
 .paragrafo-um {
 	padding: 10px;
 	line-height: 25px;
+	color: aliceblue;
 }
 
 .aside_div{
@@ -219,11 +219,13 @@ aside {
 
 .noticias {
 	font-size: 30px;
-	color: #f0e8e8;
+	color: #ffffff;
+	margin-bottom: 40px;
 }
 
 .paragrafo-dois {
 	padding: 10px;
+	color: aliceblue;
 }
 
 p {
@@ -237,25 +239,31 @@ p {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
+	padding: 20px;
 }
 
 .link-noticia:link, .link-noticia:visited {
-	background-color: transparent;
-	color: #000;
-	color: #fff;
-	text-decoration: none;
-	border-radius: .25rem;
 	line-height: 2.5rem;
-	transition: .3s;
 }
 
 .footer_container{
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
 	margin-top: 30px;
+}
+
+.nav-list_footer{
+	display: flex;
+	list-style: none;
+}
+
+.nav-list_footer li {
+	letter-spacing: 3px;
+	margin: 40px 0 40px 28px;
 }
 
 h2 {
@@ -272,6 +280,7 @@ h2 {
 
 .banner-footer {
 	cursor: pointer;
+	width: 500px;
 }
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -285,11 +294,11 @@ h2 {
 
 	.nav-list {
 		position: absolute;
-		top: 8vh;
+		top: 14vh;
 		right: 0;
 		width: 100vw;
-		height: 92vh;
-		background: #23232e;
+		height: 100vh;
+		background: #23232ee5;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
@@ -351,7 +360,7 @@ h2 {
 	}
 
 	.txt_main{
-		max-height: 400px;
+		max-height: 425px;
 		overflow-y: auto;
 		font-size: .8em;
 	}
@@ -392,5 +401,9 @@ h2 {
 
 	.banner-footer{
 		width: 200px;
+	}
+
+	.nav-list_footer{
+		display: none;
 	}
 }
