@@ -1,58 +1,103 @@
-/* body {
-    background-color: orangered;
-    color: white;
-    margin: 0;
-    font-family: rubik;
-} */
+/* // Reset Css //  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------/-/---------------------*/
 
 body {
     background-image: url(../img/fundo-site.png);/*maneira de colocar img.*/
     background-repeat: no-repeat;/*isso diz para o background não repetir o fundo*/
     background-size: cover;/*isso diz para o background ocupar todo o body*/
     min-height: 100vh;
-}
-
-header {
 	font-family: 'Outfit', sans-serif;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
 }
 
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.3s;
+}
+  
+a:hover {
+	opacity: 0.7;
+}
+  
+.logo_pokemon {
+	width: 250px;
+}
+  
 nav {
-	border-radius: 10px;
+    width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	gap: 40px;
-	margin-top: 4em; /* Adicione um espaçamento superior para separar do header */
+	font-family: 'Outfit', sans-serif;
+	background: #23232e94;
+	height: 14vh;
 }
-
-.link-nav:link, .link-nav:visited, 
-.link-noticia:link, .link-noticia:visited {
-  background-color: transparent;
-  color: #fff;
-  text-decoration: none;
-  border-radius: .25rem;
-  line-height: 2.5rem;
-  transition: .3s;
+  
+.nav-list {
+	list-style: none;
+	display: flex;
 }
-
-.link-nav:hover, .link-noticia:hover {
-  color: hsl(120 100% 0%);
-  background-color: hsl(51, 84%, 36%);
-  padding: 0.25rem 0.5rem;
+  
+.nav-list li {
+	letter-spacing: 3px;
+	margin-left: 32px;
 }
-
-.link-nav:active, .link-noticia:active {
-	font-size: 16px;
+  
+.mobile-menu {
+	display: none;
+	cursor: pointer;
 }
-
-.link-nav {
-	font-size: 1.2rem;
-	margin: 30px;
+  
+.mobile-menu div {
+	width: 32px;
+	height: 2px;
+	background: #fff;
+	margin: 8px;
+	transition: 0.3s;
 }
 
 .container {
@@ -119,12 +164,27 @@ h1 {
     }
 }
 
-footer {
-	width: 1211px;
-	padding: 20px;
+.footer_container{
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	margin: 0 50px 0 50px;
+	margin-top: 30px;
+}
+
+.nav-list_footer{
+	display: flex;
+	list-style: none;
+}
+
+.nav-list_footer li {
+	letter-spacing: 3px;
+	margin: 40px 0 40px 28px;
+}
+
+.banner-footer {
+	cursor: pointer;
+	width: 500px;
 }

@@ -110,38 +110,6 @@ nav {
 	transition: 0.3s;
 }
 
-/* nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 40px;
-	margin-top: 4em; /* Adicione um espaçamento superior para separar do header
-}
-
-/* .link-nav {
-	font-size: 1.2rem;
-	margin: 30px;
-} */
-
-/* .link-nav:link, .link-nav:visited {
-  background-color: transparent;
-  color: #fff;
-  text-decoration: none;
-  border-radius: .25rem;
-  line-height: 2.5rem;
-  transition: .3s;
-}
-
-.link-nav:hover, .link-noticia:hover {
-  color: hsl(120 100% 0%);
-  background-color: hsl(51, 84%, 36%);
-  padding: 0.25rem 0.5rem;
-}
-
-.link-nav:active, .link-noticia:active {
-	font-size: 16px;
-} */
-
 .titulo_principal{
 	display: flex;
 	width: 100%;
