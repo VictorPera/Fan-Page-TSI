@@ -57,22 +57,51 @@ body {
     width: 100%;
 }
 
-header {
-	font-family: 'Outfit', sans-serif;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.3s;
 }
-
+  
+a:hover {
+	opacity: 0.7;
+}
+  
+.logo_pokemon {
+	width: 250px;
+}
+  
 nav {
-	border-radius: 10px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	gap: 40px;
-	margin-top: 4em; /* Adicione um espaçamento superior para separar do header */
+	font-family: 'Outfit', sans-serif;
+	background: #23232e94;
+	height: 14vh;
+}
+  
+.nav-list {
+	list-style: none;
+	display: flex;
+	margin: 0;
+}
+  
+.nav-list li {
+	letter-spacing: 3px;
+	margin: 0;
+}
+  
+.mobile-menu {
+	display: none;
+	cursor: pointer;
+}
+  
+.mobile-menu div {
+	width: 32px;
+	height: 2px;
+	background: #fff;
+	margin: 8px;
+	transition: 0.3s;
 }
 
 main {
@@ -83,40 +112,6 @@ main {
 	justify-content: center;
 	align-items: center;
 	margin: 50px;
-}
-
-footer {
-	width: 1211px;
-	padding: 20px;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	margin: 0 50px 0 50px;
-}
-
-.link-nav:link, .link-nav:visited {
-  background-color: transparent;
-  color: hsl(0, 0%, 100%);
-  text-decoration: none;
-  border-radius: .25rem;
-  line-height: 2.5rem;
-  transition: .3s;
-}
-
-.link-nav:hover {
-  color: hsl(120 100% 0%);
-  background-color: hsl(51, 84%, 36%);
-  padding: 0.25rem 0.5rem;
-}
-
-.link-nav:active {
-	font-size: 16px;
-}
-
-.link-nav {
-	font-size: 1.2rem;
-	margin: 30px;
 }
 
 h1 {
@@ -156,4 +151,14 @@ p {
 
 .banner-footer {
 	cursor: pointer;
+}
+
+.footer_container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
 }
